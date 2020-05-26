@@ -21,13 +21,15 @@ import Inline from './styling/inline';
 import Form from './components/forms/form';
 import LifecycleA from './components/Lifecycle/LifecycleA';
 import FragmentDemo from './components/fragments/FragmentDemo';
+import Table from './components/fragments/Table';
 
 
 class App extends Component {
   render() {
     return (
     <div className="App">
-        <FragmentDemo />
+        <Table />
+        {/* <FragmentDemo /> */}
         {/* <Form /> */}
         {/* <LifecycleA /> */}
         {/* <Inline /> */}
