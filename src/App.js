@@ -1,4 +1,4 @@
-import React, { Component } from 'react';
+import React, { Component, PureComponent } from 'react';
 import logo from './logo.svg';
 import './App.css';
 import Greet from './components/greet'
@@ -22,13 +22,17 @@ import Form from './components/forms/form';
 import LifecycleA from './components/Lifecycle/LifecycleA';
 import FragmentDemo from './components/fragments/FragmentDemo';
 import Table from './components/fragments/Table';
+import Purecomp from './components/purecomponents/Purecomp';
+import Parentcompo from './components/purecomponents/Parentcomp';
 
 
 class App extends Component {
   render() {
     return (
     <div className="App">
-        <Table />
+        <Parentcompo />
+        {/* <Purecomp /> */}
+        {/* <Table /> */}
         {/* <FragmentDemo /> */}
         {/* <Form /> */}
         {/* <LifecycleA /> */}
