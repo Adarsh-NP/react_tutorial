@@ -24,13 +24,19 @@ import FragmentDemo from './components/fragments/FragmentDemo';
 import Table from './components/fragments/Table';
 import Purecomp from './components/purecomponents/Purecomp';
 import Parentcompo from './components/purecomponents/Parentcomp';
+import Refsdomo from './components/refs/Refsdomo';
+import FocusInput from './components/refs/FocusInput';
+import FRParent from './components/refs/FRParent';
 
 
 class App extends Component {
   render() {
     return (
     <div className="App">
-        <Parentcompo />
+        <FRParent />
+        {/* <FocusInput /> */}
+        {/* <Refsdomo /> */}
+        {/* <Parentcompo /> */}
         {/* <Purecomp /> */}
         {/* <Table /> */}
         {/* <FragmentDemo /> */}
