@@ -32,14 +32,32 @@ import Hero from './components/Hero';
 import Errorboundary from './components/Errorboundary';
 import Clickcounter from './Clickcounter';
 import HoverCounter from './HoverCounter';
+import ClickCounterTwo from './components/ClickCounterTwo';
+import HoverCounterTwo from './components/HoverCounterTwo';
+import RenderProps from './components/User';
+import User from './components/User';
+import Counterex from './components/Counterex';
 
 
 class App extends Component {
   render() {
     return (
     <div className="App">
-        <Clickcounter />
-        <HoverCounter />
+        {/* <ClickCounterTwo />
+        <HoverCounterTwo /> */}
+        <Counterex
+           render={(count, incrementCount, cVal) => (
+            <ClickCounterTwo count={count} incrementCount={incrementCount} cVal={cVal} /> 
+            )}
+       />
+        <Counterex
+           render={(count, incrementCount, cVal) => (
+            <HoverCounterTwo count={count} incrementCount={incrementCount} cVal={cVal} /> 
+            )}
+       />
+        {/* <User render={(IsLoggedIn)=> IsLoggedIn ? 'Addy' : 'Guest'}/> */}
+        {/* <Clickcounter />
+        <HoverCounter /> */}
         {/* <Errorboundary>
         <Hero heroname='batman' />
         <Hero heroname='superman' />
