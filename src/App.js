@@ -30,17 +30,21 @@ import FRParent from './components/refs/FRParent';
 import Portals from './components/Portals';
 import Hero from './components/Hero';
 import Errorboundary from './components/Errorboundary';
+import Clickcounter from './Clickcounter';
+import HoverCounter from './HoverCounter';
 
 
 class App extends Component {
   render() {
     return (
     <div className="App">
-        <Errorboundary>
+        <Clickcounter />
+        <HoverCounter />
+        {/* <Errorboundary>
         <Hero heroname='batman' />
         <Hero heroname='superman' />
         <Hero heroname='joker' />
-        </Errorboundary>
+        </Errorboundary> */}
         
         {/* <Portals /> */}
         {/* <FRParent /> */}
