@@ -27,13 +27,23 @@ import Parentcompo from './components/purecomponents/Parentcomp';
 import Refsdomo from './components/refs/Refsdomo';
 import FocusInput from './components/refs/FocusInput';
 import FRParent from './components/refs/FRParent';
+import Portals from './components/Portals';
+import Hero from './components/Hero';
+import Errorboundary from './components/Errorboundary';
 
 
 class App extends Component {
   render() {
     return (
     <div className="App">
-        <FRParent />
+        <Errorboundary>
+        <Hero heroname='batman' />
+        <Hero heroname='superman' />
+        <Hero heroname='joker' />
+        </Errorboundary>
+        
+        {/* <Portals /> */}
+        {/* <FRParent /> */}
         {/* <FocusInput /> */}
         {/* <Refsdomo /> */}
         {/* <Parentcompo /> */}
