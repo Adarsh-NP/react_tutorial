@@ -37,15 +37,19 @@ import HoverCounterTwo from './components/HoverCounterTwo';
 import RenderProps from './components/User';
 import User from './components/User';
 import Counterex from './components/Counterex';
+import Postlist from './components/Postlist';
+import PostForms from './PostForms';
 
 
 class App extends Component {
   render() {
     return (
     <div className="App">
+        <PostForms />
+        {/* <Postlist /> */}
         {/* <ClickCounterTwo />
         <HoverCounterTwo /> */}
-        <Counterex
+        {/* <Counterex
            render={(count, incrementCount, cVal) => (
             <ClickCounterTwo count={count} incrementCount={incrementCount} cVal={cVal} /> 
             )}
@@ -54,7 +58,7 @@ class App extends Component {
            render={(count, incrementCount, cVal) => (
             <HoverCounterTwo count={count} incrementCount={incrementCount} cVal={cVal} /> 
             )}
-       />
+       /> */}
         {/* <User render={(IsLoggedIn)=> IsLoggedIn ? 'Addy' : 'Guest'}/> */}
         {/* <Clickcounter />
         <HoverCounter /> */}
