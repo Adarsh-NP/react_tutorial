@@ -46,7 +46,7 @@ class App extends Component {
     return (
     <div className="App">
         <PostForms />
-        {/* <Postlist /> */}
+        <Postlist />
         {/* <ClickCounterTwo />
         <HoverCounterTwo /> */}
         {/* <Counterex
